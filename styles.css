@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #2f2f2f;
+  /* color: #dce1de; */
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+  color: #1f2421;
+}
+
+#main {
+  background-color: #dce1de;
+  border-radius: 15px;
+  padding: 10px 20px;
+  /* width: 50vh; */
+  box-shadow: 5px 8px 0px rgba(73, 160, 120, 0.5);
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+#info {
+  position: relative;
+  background-color: #9cc5a1;
+  color: #1f2421;
+  border-radius: 15px;
+  padding: 10px 20px;
+  bottom: 70px;
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 0 50px;
+}
+
+#result {
+  display: block;
+  margin-bottom: 30px;
+  /* font-weight: 500; */
+  font-size: 1.4rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  opacity: 30%;
+  height: 75px;
+  color: #dce1de;
+}
+
+h1 {
+  position: relative;
+  top: 120px;
+  color: #dce1de;
+  font-size: 3.3rem;
+  text-align: center;
+}
+
+#check-btn,
+#text-input {
+  margin: 10px 10px 20px 10px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+#check-btn {
+  background-color: rgba(73, 160, 120, 0.5);
+  padding: 4px 15px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+#check-btn:hover {
+  background-color: #9cc5a1;
+}
+
+@media screen and (max-width: 458px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
