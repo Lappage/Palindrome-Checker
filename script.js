@@ -20,7 +20,7 @@ const checkValue = () => {
 };
 
 searchBox.addEventListener("keypress", (buttonPress) => {
-  if (buttonPress.keyCode === 13) {
+  if (buttonPress.key === "Enter") {
     checkValue();
   }
 });
