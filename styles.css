@@ -1,49 +1,48 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 * {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 body {
   background-color: #2f2f2f;
-  /* color: #dce1de; */
+  cursor: default;
 }
 main {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   height: 90vh;
   color: #1f2421;
 }
 
 #main {
-  background-color: #dce1de;
+  position: relative;
+  bottom: 30px;
+  background-color: #f0f4fe;
   border-radius: 15px;
   padding: 10px 20px;
-  /* width: 50vh; */
-  box-shadow: 5px 8px 0px rgba(73, 160, 120, 0.5);
+  box-shadow: 5px 8px 0px #6d95ed;
   text-align: center;
   font-size: 1.1rem;
 }
 
 #info {
-  position: relative;
-  background-color: #9cc5a1;
-  color: #1f2421;
+  background-color: #9cbaf4;
+  color: #2f2f2f;
   border-radius: 15px;
   padding: 10px 20px;
-  bottom: 70px;
   text-align: center;
   font-size: 1.1rem;
   margin: 0 50px;
+  max-width: 700px;
 }
 
 #result {
   display: block;
   margin-bottom: 30px;
-  /* font-weight: 500; */
   font-size: 1.4rem;
 }
 
@@ -51,17 +50,18 @@ footer {
   display: flex;
   justify-content: center;
   align-items: end;
-  opacity: 30%;
   height: 75px;
   color: #dce1de;
+  color: grey;
 }
 
 h1 {
-  position: relative;
-  top: 120px;
-  color: #dce1de;
-  font-size: 3.3rem;
+  color: #f4f4f5;
+  font-size: 4rem;
   text-align: center;
+  font-weight: 200;
+  letter-spacing: -0.025em;
+  cursor: default;
 }
 
 #check-btn,
@@ -72,7 +72,7 @@ h1 {
 }
 
 #check-btn {
-  background-color: rgba(73, 160, 120, 0.5);
+  background-color: #6d95ed;
   padding: 4px 15px;
   margin-left: 5px;
   border-radius: 5px;
@@ -81,7 +81,12 @@ h1 {
 }
 
 #check-btn:hover {
-  background-color: #9cc5a1;
+  background-color: #9cbaf4;
+}
+
+a {
+  color: #6d95ed;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 458px) {
